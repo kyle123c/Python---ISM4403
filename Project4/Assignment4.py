@@ -42,8 +42,8 @@ hero_wins=0
 villain_wins=0
 
 while True:
-    Hero1 = Hero('IronMan', 2, "Ak47")  # Creation of Hero object
-    Villian1 = Villian('Thanos', 2, "Top")  # Creation of Villian object
+    Hero1 = Hero('Goku', 2, "Kamahameha")  # Creation of Hero object
+    Villian1 = Villian('Frieza', 2, "Death Beam")  # Creation of Villian object
     round_number = 0
     battle_number += 1
     total_damage=[]
@@ -57,12 +57,10 @@ while True:
         print("Who will attack?")
         print("1.", Hero1.name)
         print("2.", Villian1.name)
-
-
-        '''
         print("choice : ", end=" ")
         choice: int = int(input())
         print("")
+        
         if choice == 2:
             Hero1.imHit(Villian1.AttackPoints())
             total_damage.append(Villian1.attack)
@@ -101,10 +99,6 @@ while True:
 plt.pie([hero_wins,villain_wins],labels=["HERO","VILLAIN"])
 plt.show()
 
-
-
-
-'''
 
 
 

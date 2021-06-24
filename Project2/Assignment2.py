@@ -23,9 +23,9 @@ for x in mylist:
 y = True
 bandlist = []
 while y:
-	userlist2 = input("Enter your favorite bands until they enter 'The shows over' ")
+	userlist2 = input("Enter your favorite bands until they enter 'The shows over!' ")
 	print("The Band entered was: " +str(userlist2))
-	if userlist2 == "The shows over":
+	if userlist2 == "The shows over!":
 		print("The input was 'The shows over' ...Exiting...")
 		y = False
 	else:
